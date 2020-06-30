@@ -1,0 +1,35 @@
+<!--
+1. Crear una nueva página web nombrarla 04_TareaJS.html
+2. Crear un programa que pida números positivos al usuario, y vaya calculando la suma de todos
+ellos. Terminará cuando se teclea un número negativo o cero. Se sugiere usar promt,
+funciones, condiciones, contadores y eventos.
+3. Añadir comentarios que expliquen el funcionamiento del código.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tarea 04 on JS</title>
+	<link rel="stylesheet" href="css/style.css"></link>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1 id="hT1">Ingresa los números</h1>
+
+	<script>
+		var num = 0; //var num = 0 <-- Inicializando desde 0
+		var suma= 0; //var suma = 0 <-- Inicializando desde 0
+		
+		//Bucle while
+
+		do{
+			//EL mensaje se repetira varias veces
+			var num = parseInt(prompt("Introduce un número: " )); //Prompt espera una orden
+			var suma = suma+num; //La variable suma almacenara los números ingresados o sea num
+
+		}while(num != 0); // num va a ser diferente de 0 asi que cuando el usuario ingrese 0 termina la ejecución
+						  // realizando la suma de los números previamente ingresados
+			alert(suma);  // Se mandara una alerta con la suma total
+	</script>
+</body>
+</html>
